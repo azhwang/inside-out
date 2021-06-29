@@ -1,0 +1,129 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 TimesNewRomanPS-BoldMT;\f2\froman\fcharset0 TimesNewRomanPSMT;
+\f3\froman\fcharset0 TimesNewRomanPS-BoldItalicMT;\f4\froman\fcharset0 Times-Roman;\f5\froman\fcharset0 TimesNewRomanPS-ItalicMT;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c100000;}
+\margl1440\margr1440\vieww17260\viewh16820\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <p><b><big>
+\f1\b\fs36 About the varenicline simulation
+\f0\b0\fs24 </big></b></p>
+\f2\fs27 \
+
+\f0\fs24 <p><b><i>
+\f3\i\b\fs27 Legend to the simulation
+\f0\i0\b0\fs24 </i></b></p>
+\f2\fs27 \
+
+\f0\fs24 <p>
+\f2\fs27 This app simulates pharmacokinetics and pharmacodynamics of the smoking cessation drug, varenicline. At left, the pharmacokinetic / pharmacodynamic model, implemented in Matlab SimBiology. Individual parameters, structures, and dosing are presented in Supplemental Table 2 and in the Supplemental ZIP File of (Shivange et al., 2019).
+\f0\fs24 </p><p>
+\f2\fs27 The \'93Recommended Dosing\'94 button reverts the simulation to the dosing recommended in the varenicline package insert: 0.5 mg of oral varenicline, each 12 h. Other parameters are based on the data of (Rollema et al., 2010) and (Faessel et. Al., 2006).
+\f0\fs24 </p><p>
+\f2\fs27 In the \'93plots vs time\'94 tab: Top. Varenicline concentrations in the plasma / CSF / ER, and in the \'93sequestered\'94 compartment. The \'93sequestered\'94 compartment was termed the \'93peripheral compartment\'94 by (Benowitz et al., 1991) in their study of nicotine, but that terminology is less preferable in discussions of the nervous system. Note the logarithmic [varenicline] scale.
+\f0\fs24 </p><p>
+\f2\fs27 Bottom. Effects on the inside-out and outside-in processes. Note that the \'93recommended dosing \'94 activates nAChR protein chaperoning (inside-out process) > 50%, but this activates nAChR channels (outside-in process) by a few percent at most.
+\f0\fs24 </p><p>
+\f2\fs27 This app is a slightly modified, interactive version of Figure 10 in (Shivange et al, 2019). The original simulations were performed by Janice Jeon, then a Caltech undergrad, in the Matlab SimBiology Toolbox. In 2020, Dr. Fulden Buyukozturk (The Mathworks) adapted the nicotine simulations to a Matlab Web App, with advice from Suresh Balakrishnama of The Mathworks. At Caltech, Alexander Wang, a Caltech undergrad, adapted the model to varenicline and modified the user interface further, based on suggestions from Henry Lester\'92s research group. The present version is running on a Unix server.
+\f0\fs24 </p><p><b><i>
+\f3\i\b\fs27 Lightning scientific summary: subcellular and macroscopic pharmacokinetics of nicotine and varenicline.
+\f0\i0\b0\fs24 </i></b></p><p>
+\f2\fs27 Modified from the abstract of (Shivange et al., 2019). Nicotine dependence is thought to arise in part because nicotine permeates into the endoplasmic reticulum (ER), where it binds to nicotinic receptors (nAChRs) and begins an \'93inside-out\'94 pathway that leads to upregulation of nAChRs on the plasma membrane. However until 2019, the dynamics of nicotine or varenicline entry into the ER were not quantified. This problem was solved with a series of genetically-encoded fluorescent biosensors for nicotine, termed iNicSnFRs. In several cell types, we find that nicotine equilibrates in the ER within 10 s (possibly within 1 s) of extracellular application, and leaves as rapidly after removal from the extracellular solution. The [nicotine] in the ER is within two-fold of the extracellular value.
+\f0\fs24 </p><p>
+\f2\fs27 The biosensors also detect varenicline. Similar conclusions were reached for varenicline: this drug also permeates into the ER within seconds.
+\f0\fs24 </p><p>
+\f2\fs27 The app uses these data to run combined pharmacokinetic and pharmacodynamic simulations of varenicline. In the ER, the inside-out pathway begins when nicotine or varenicline becomes a stabilizing pharmacological chaperone for some nAChR subtypes, even at concentrations as low as ~ 10 nM. Such concentrations would persist in a person taking varenicline according to the recommended dosing.
+\f0\fs24 </p><p><b><i>
+\f3\i\b\fs27 Additional details: the outside-in and inside-out pathways during either smoking or varenicline treatment
+\f0\i0\b0\fs24 </i></b></p><p>
+\f2\fs27 The accompanying nicotine PK/PD app provides a summary of nicotine pharmacokinetics (condensed from the paper by Shivange et al., 2019). The present app\'92s simulations for varenicline incorporate an additional step appropriate to orally available drugs: rate-limiting entry into the blood from the digestive tract (Shivange et al., 2019).
+\f0\fs24 </p><p>
+\f2\fs27 Many fewer studies are available for varenicline than for nicotine.  Nonetheless, Shivange et al generated two insights important for understanding role of varenicline in the inside-out pathway. 1, The genetically encoded nicotine biosensors targeted to the ER reveal that varenicline appears in the ER within \uc0\u8804  10 s after it appears in the extracellular solution.  2, After this delay, the [varenicline] in the ER differs by less than two-fold from [varenicline] in the extracellular solution.
+\f0\fs24 </p><p>
+\f2\fs27 Because of the highly agonist-sensitive feature of pharmacological chaperoning, [varenicline] in the ER remains greater than the EC50 for pharmacological chaperoning during beginning a few h after the start of \'93recommended dosing\'94. The inside-out pathway then remains > 50% activated continually.
+\f0\fs24 </p><p><b><i>
+\f3\i\b\fs27 Does varenicline produce nicotine addiction; or does varenicline maintain nicotine addiction?
+\f0\i0\b0\fs24 </i></b></p><p>
+\f2\fs27 The simulations show that the \'93recommended dosing\'94 produces levels of varenicline in the ER that could lead to pharmacological chaperoning. This explains the observations that varenicline also up-regulates 
+\f4 \uc0\u945 
+\f2 4
+\f4 \uc0\u946 
+\f2 2 nAChRs (Turner et al., 2011; Marks et al., 2015; Govind et al., 2017).  We pursue the hypothesis that this up-regulation is necessary and sufficient for the early phases of nicotine dependence.
+\f0\fs24 </p><p>
+\f2\fs27 In the usual explanation for varenicline as a smoking cessation agent, even though it produces negligible activation of 
+\f4 \uc0\u945 
+\f2 4
+\f4 \uc0\u946 
+\f2 2 nAChR channels (as verified in the simulations), it does desensitize these nAChRs, blocking the action of nicotine itself. The simulations do not directly model desensitization.
+\f0\fs24 </p><p>
+\f2\fs27 Our study supports the additional suggestion that the several-week taper regimen for varenicline also allows nicotine users to reverse up-regulation gradually. This, in turn, could help aspiring quitters to avoid craving and/or behavioral aspects of withdrawal. However, the persistence of up-regulated nAChRs could also cause some of the side effects of varenicline during the first days to weeks (Ashare et al., 2017). These side effects could underlie this drug\'92s suboptimal effectiveness in smoking cessation (Fagerstr\'f6m and Hughes, 2008).
+\f0\fs24 </p><p><b><i>
+\f3\i\b\fs27 Could you model your favorite drug (YFD) with this app?
+\f0\i0\b0\fs24 </i></b></p><p>
+\f2\fs27 This model is more general than the nicotine PK/PD app, because we incorporate a rate-limiting step from the digestive tract to the blood (ka).  This modification renders the model appropriate to many orally available drugs. The model also has controllable rate constants for entering and leaving (kf, kr respectively) a \'93sequestering compartment\'94; a rate constant for elimination (kel); and a fractional bioavailability (F).
+\f0\fs24 </p><p>
+\f2\fs27 The model also has two drug-receptor processes, both with a Hill coefficient of unity; but the user cannot vary the EC50 values. The user also cannot vary the volume of distribution. See Table S2 of (Shivange et al., 2019) for these parameters.
+\f0\fs24 </p><p>
+\f2\fs27 If you use this app for YFD, do let us know (lester at Caltech dot edu). This could help us with funding! If you would like to suggest changes, please do so.
+\f0\fs24 </p><p><b><i>
+\f3\i\b\fs27 Funding
+\f0\i0\b0\fs24 </i></b></p><p>
+\f2\fs27 This research and the development of this app was supported by grants from US National Institutes of Health (DA036061, DA037161, DA043829, GM123582, GM007616, MH061876, NS097362, and NS034407), the California Tobacco-Related Disease Research Project (23XT-0007), the California Institute for Regenerative Medicine (EDUC2-08398), the Brain and Behavior Research Foundation (NARSAD), the Howard Hughes Medical Institute, and the Della Martin Foundation. Edwin Chapman is an Investigator of the Howard Hughes Medical Institute.
+\f0\fs24 </p><p><b><i>
+\f3\i\b\fs27 References Cited
+\f0\i0\b0\fs24 </i></b></p><p>
+\f2\fs27 Ashare, R.L., C. Lerman, R.F. Tyndale, L.W. Hawk, T.P. George, P. Cinciripini, and R.A. Schnoll. 2017. Sleep Disturbance During Smoking Cessation: Withdrawal or Side Effect of Treatment? 
+\f0\fs24 <i>
+\f5\i\fs27 J. Smok. Cessat
+\f0\i0\fs24 </i>.
+\f2\fs27  12:63\'9670.
+\f0\fs24 </p><p>
+\f2\fs27 Benowitz, N.L., P. Jacob, 3rd, C. Denaro, and R. Jenkins. 1991. Stable isotope studies of nicotine kinetics and bioavailability.\'a0
+\f0\fs24 <i>
+\f5\i\fs27 Clin Pharmacol Ther
+\f0\i0\fs24 </i>.
+\f2\fs27 \'a049:270-277.
+\f0\fs24 </p><p>
+\f2\fs27 Fagerstr\'f6m, K., and J. Hughes. 2008. Varenicline in the treatment of tobacco dependence. Neuropsychiatr. Dis. Treat. 4:353\'96363. Govind, A.P., P. Vezina, and W.N. Green. 2009. Nicotine-induced upregulation of nicotinic receptors: underlying mechanisms and relevance to nicotine addiction. 
+\f0\fs24 <i>
+\f5\i\fs27 Biochem. Pharmacol
+\f0\i0\fs24 </i>.
+\f2\fs27  78:756\'96765.
+\f0\fs24 </p><p>
+\f2\fs27 Marks, M.J., H.C. O\'92Neill, K.M. Wynalda-Camozzi, N.C. Ortiz, E.E. Simmons, C.A. Short, C.M. Butt, J.M. McIntosh, and S.R. Grady. 2015. Chronic treatment with varenicline changes expression of four nAChR binding sites in mice. 
+\f0\fs24 <i>
+\f5\i\fs27 Neuropharmacology
+\f0\i0\fs24 </i>.
+\f2\fs27  99:142\'96155.
+\f0\fs24 </p><p>
+\f2\fs27 Rollema, H., L.K. Chambers, J.W. Coe, J. Glowa, R.S. Hurst, L.A. Lebel, Y. Lu, 
+\f4 R.S. Mansbach, R.J. Mather, C.C. Rovetti, S.B. Sands, E. Schaeffer, D.W. Schulz, F.D. Tingley, 3rd, and K.E. Williams. 2007. Pharmacological profile of the \uc0\u945 4\u946 2 nicotinic acetylcholine receptor partial agonist varenicline, an effective smoking cessation ai
+\f2 d.\'a0
+\f0\fs24 <i>
+\f5\i\fs27 Neuropharmacology
+\f0\i0\fs24 </i>
+\f5\i\fs27 .
+\f2\i0 \'a052.
+\f0\fs24 </p><p>
+\f2\fs27 Shivange, A.V., P.M. Borden, A.K. Muthusamy, A.L. Nichols, K. Bera, H. Bao, I. Bishara, J. Jeon, M.J. Mulcahy, B. Cohen, S.L. ORiordan, C. Kim, D.A. Dougherty, E.R. Chapman, J.S. Marvin, L.L. Looger, and H.A. Lester. 2019. Determining the pharmacokinetics of nicotinic drugs in the endoplasmic reticulum using biosensors.\'a0
+\f0\fs24 <i>
+\f5\i\fs27 J Gen Physiol 151:738-757
+\f0\i0\fs24 </i>
+\f5\i\fs27 .
+\f2\i0 \'a0<a href=
+\f0\fs24 "{\field{\*\fldinst{HYPERLINK "%22"}}{\fldrslt 
+\f2\fs27 \cf2 \ul \ulc2 https://rupress.org/jgp/article/151/6/738/121017/Determining-the-pharmacokinetics-of-nicotinic}}\'94>{\field{\*\fldinst{HYPERLINK "%22"}}{\fldrslt 
+\fs27 \cf2 \ul \ulc2 https://rupress.org/jgp/article/151/6/738/121017/Determining-the-pharmacokinetics-of-nicotinic}}
+\f2\fs27 </a>
+\f0\fs24 </p><p>
+\f2\fs27 Turner, J.R., L.M. Castellano, and J.A. Blendy. 2011. Parallel anxiolytic-like effects and upregulation of neuronal nicotinic acetylcholine receptors following chronic nicotine and varenicline. 
+\f0\fs24 <i>
+\f5\i\fs27 Nicotine Tob. Res
+\f0\i0\fs24 </i>
+\f5\i\fs27 .
+\f2\i0  13:41\'9646.
+\f0\fs24 </p>
+\fs27 \
+}
