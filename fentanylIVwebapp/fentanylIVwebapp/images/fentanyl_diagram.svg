@@ -41,10 +41,10 @@
      id="namedview4177"
      showgrid="false"
      inkscape:zoom="0.3127111"
-     inkscape:cx="1550.2196"
+     inkscape:cx="1991.5215"
      inkscape:cy="665.6653"
-     inkscape:window-x="2279"
-     inkscape:window-y="139"
+     inkscape:window-x="222"
+     inkscape:window-y="145"
      inkscape:window-maximized="0"
      inkscape:current-layer="g4173"
      inkscape:document-rotation="0"
@@ -407,21 +407,8 @@
          id="path4043" />
     </g>
     <g
-       style="fill:#444444;stroke:#444444;stroke-width:2;text-rendering:optimizeLegibility"
-       transform="translate(-220.9997,-70.9998)"
-       id="g4049">
-      <line
-         x1="1730"
-         x2="2319"
-         y1="644"
-         style="fill:none"
-         y2="780"
-         clip-path="url(#clipPath3)"
-         id="line4047" />
-    </g>
-    <g
        style="fill:#505050;stroke:#505050;stroke-width:2;text-rendering:optimizeLegibility"
-       transform="translate(-220.9997,-70.9998)"
+       transform="matrix(1.2539373,0,0,1.231939,-713.82996,-188.67691)"
        id="g4063">
       <line
          x1="2141"
@@ -447,7 +434,7 @@
     </g>
     <g
        style="fill:#006600;stroke:#006600;stroke-width:4;text-rendering:optimizeLegibility"
-       transform="translate(-220.9997,-70.9998)"
+       transform="matrix(1.1980481,0,0,1.1436664,-605.13791,-143.58063)"
        id="g4073">
       <line
          x1="1942"
@@ -621,35 +608,6 @@
        transform="translate(2300.0003,572.0002)"
        style="font-size:40px;font-family:Arial;fill:#ff0000;stroke:#ff0000;text-rendering:optimizeLegibility"
        id="g4151" />
-    <g
-       style="fill:#505050;stroke:#505050;text-rendering:optimizeLegibility"
-       transform="translate(2097.0003,705.0002)"
-       id="g4167">
-      <circle
-         r="4.5"
-         style="stroke:none"
-         cx="4.5"
-         cy="4.5"
-         clip-path="url(#clipPath26)"
-         id="circle4161" />
-      <circle
-         style="fill:none;stroke:#808080"
-         r="4.5"
-         cx="4.5"
-         cy="4.5"
-         clip-path="url(#clipPath26)"
-         id="circle4163" />
-      <image
-         x="0"
-         y="-11"
-         width="9"
-         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVR42mNgwAGM 3Cr+MxACIEUYCmGC2DDpJuF1E9HGEnQLQZOICRcAk+8yR8PsB0oAAAAASUVORK5C YII="
-         style="fill:#808080;stroke:#808080"
-         height="9"
-         preserveAspectRatio="none"
-         clip-path="url(#clipPath26)"
-         id="image4165" />
-    </g>
     <rect
        width="420.19858"
        height="340.25259"
