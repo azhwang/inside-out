@@ -1,5 +1,5 @@
 # inside-out
 
-Inside-out is a series of MATLAB web apps which simulate the mechanisms and pharmacokinetics behind various drugs, including nicotine, varenicline, and fentanyl.
+Inside-out is a suite of MATLAB web apps which simulate the mechanisms and pharmacokinetics behind various drugs, including nicotine, varenicline, and fentanyl.
 
-http://inside-out.caltech.edu:9988/webapps/home/
+The web apps can be accessed at: http://inside-out.caltech.edu:9988/webapps/home/
